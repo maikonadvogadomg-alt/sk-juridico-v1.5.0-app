@@ -21,8 +21,16 @@
     "electron-builder": "^25.1.8"
   },
   "dependencies": {
+    "@capacitor/android": "^7.0.0",
     "@capacitor/core": "^7.0.0",
-    "@capacitor/android": "^7.0.0"
+    "@neon/env": "^1.6.2",
+    "@neondatabase/api-client": "^2.7.3",
+    "@sst-provider/neon": "^0.13.0",
+    "neon": "^8.4.4",
+    "node": "^26.11.1",
+    "nodemon": "^3.1.14",
+    "sqli": "^0.0.4",
+    "tsx": "^4.23.15"
   },
   "description": "workspace",
   "author": "workspace",

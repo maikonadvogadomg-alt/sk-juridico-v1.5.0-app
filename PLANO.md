@@ -1,12 +1,12 @@
 # 📋 Plano do projeto: sk-juridico-v1.5.0
 
-_Gerado em 14/10/2026, 02:50:12 — sem IA, lendo os arquivos._
+_Gerado em 14/10/2026, 03:03:17 — sem IA, lendo os arquivos._
 
 ## 📊 Visão geral
 | Item | Valor |
 |---|---|
 | Arquivos | 216 |
-| Linhas | 46.427 |
+| Linhas | 46.428 |
 | Telas/páginas | 76 |
 | Rotas do backend | 175 |
 | Chamadas do app | 145 |
