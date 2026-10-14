@@ -142,8 +142,7 @@ cp .env.example .env
 # Edite .env com suas credenciais (veja seção 4)
 
 # 4. Inicializar o banco de dados
-pnpm --filter @workspace/db run push
-
+cp .env.example .env
 # 5. Build do backend
 pnpm --filter @workspace/api-server run build
 

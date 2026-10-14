@@ -1,28 +1,38 @@
 # Plano do projeto: sk-juridico-v1.5.0
 
-_Gerado pelo Mini SK em 13/10/2026, 20:51:22_
+_Gerado pelo Mini SK em 14/10/2026, 02:53:58_
 
 ## Resumo
 
-- Arquivos: **166** (1.8 MB)
+- Arquivos: **226** (8.2 MB)
 - Tipo: **monorepo** (vários projetos dentro de um) — 6 package.json
-- Arquivos por tipo: TSX 90, TypeScript 33, JSON 15, Shell 5, YAML 4, JavaScript 4, Markdown 3, GITKEEP 2, PNG 2, .env 1, HTML 1, SVG 1, JPG 1, Texto 1, CSS 1, API 1, CONF 1
-- Dependências diferentes: **123** (47 obrigatórias, 76 só para montar)
-- Restos da Replit: **5 arquivo(s)**
+- Arquivos por tipo: TSX 90, TypeScript 33, PNG 22, JSON 18, JavaScript 11, YAML 7, HTML 6, Markdown 5, Shell 5, Texto 4, SVG 4, GRADLE 3, .env 2, XML 2, GITKEEP 2, CSS 2, ICO 2, Manifest 2, Git 1, Java 1, PROPERTIES 1, JPG 1, API 1, CONF 1
+- Dependências diferentes: **123** (49 obrigatórias, 74 só para montar)
+- Restos da Replit: **7 arquivo(s)**
 
 ## 📦 workspace — `package.json`
 
+- Arquivo principal: `electron/main.cjs`
 
 **Comandos (scripts):**
 
 | Comando | O que faz | Executa |
 |---|---|---|
+| `desktop` | — | `electron .` |
+| `exe` | — | `electron-builder --win portable --publish never` |
 | `preinstall` | — | `sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'` |
 | `build` | Gera a versão final (pasta dist) | `pnpm run typecheck && pnpm -r --if-present run build` |
 | `typecheck:libs` | Confere os tipos do TypeScript (não muda nada) | `tsc --build` |
 | `typecheck` | Confere os tipos do TypeScript (não muda nada) | `pnpm run typecheck:libs && pnpm -r --filter "./artifacts/**" --filter "./scripts" --if-present run typecheck` |
 
-**Dependências de montagem (dev) — 5:**
+**Dependências (o app precisa) — 2:**
+
+| Pacote | Versão | Pra que serve | Tipo |
+|---|---|---|---|
+| `@capacitor/core` | ^7.0.0 | Transforma o app em APK (Android) | 📱 APK |
+| `@capacitor/android` | ^7.0.0 | Projeto Android do Capacitor | 📱 APK |
+
+**Dependências de montagem (dev) — 7:**
 
 | Pacote | Versão | Pra que serve | Tipo |
 |---|---|---|---|
@@ -31,6 +41,8 @@ _Gerado pelo Mini SK em 13/10/2026, 20:51:22_
 | `@capacitor/core` | ^8.3.4 | Transforma o app em APK (Android) | 📱 APK |
 | `prettier` | ^3.8.1 | Arruma a formatação do código | 🧪 Teste |
 | `typescript` | ~5.9.2 | JavaScript com tipos — só para montar, não vai pro app final | 🔧 Montagem |
+| `electron` | ^33.2.0 | Executável de computador (janela própria) | 💻 EXE |
+| `electron-builder` | ^25.1.8 | Gera o .exe do Electron | 💻 EXE |
 
 ## 📦 @workspace/api-server — `artifacts/api-server/package.json`
 
@@ -394,17 +406,23 @@ overrides:
 
 ## ⛔ Restos da Replit (tirar ou trocar)
 
+- .sk/plano.md — 1 menção(ões)
 - artifacts/api-server/src/routes/ai.ts — 3 menção(ões)
 - artifacts/assistente-juridico/vite.config.ts — 4 menção(ões)
 - MANUAL.md — 1 menção(ões)
+- PLANO.md — 1 menção(ões)
 - pnpm-workspace.yaml — 1 menção(ões)
 - replit.md (arquivo da Replit)
 
-## Arquivos importantes (46) — mandar estes para a IA
+## Arquivos importantes (53) — mandar estes para a IA
 
 - `.env.example`
+- `.github/workflows/apk-capacitor.yml`
+- `.github/workflows/apk.yml`
 - `.github/workflows/build-android.yml`
 - `.github/workflows/build-desktop.yml`
+- `.github/workflows/desktop-exe.yml`
+- `2/_redirects`
 - `app.json`
 - `artifacts/api-server/build.mjs`
 - `artifacts/api-server/package.json`
@@ -436,6 +454,8 @@ overrides:
 - `artifacts/desktop/preload.js`
 - `capacitor.config.ts`
 - `eas.json`
+- `electron/main.cjs`
+- `electron/preload.cjs`
 - `lib/db/drizzle.config.ts`
 - `lib/db/package.json`
 - `lib/db/src/index.ts`
@@ -444,18 +464,47 @@ overrides:
 - `lib/sync-storage/package.json`
 - `lib/sync-storage/src/index.ts`
 - `lib/sync-storage/tsconfig.json`
+- `manifest.json`
 - `package.json`
 - `pnpm-workspace.yaml`
 - `tsconfig.base.json`
 - `tsconfig.json`
 
-## Estrutura completa (166 arquivos)
+## Estrutura completa (226 arquivos)
 
 ```
 ├── .github/
 │   └── workflows/
+│       ├── apk-capacitor.yml
+│       ├── apk.yml
 │       ├── build-android.yml
-│       └── build-desktop.yml
+│       ├── build-desktop.yml
+│       └── desktop-exe.yml
+├── .sk/
+│   └── plano.md
+├── 2/
+│   └── _redirects
+├── android/
+│   ├── app/
+│   │   ├── src/
+│   │   │   └── main/
+│   │   │       ├── assets/
+│   │   │       │   └── __ponte.js
+│   │   │       ├── java/
+│   │   │       │   └── app/
+│   │   │       │       └── minisk/
+│   │   │       │           └── shell/
+│   │   │       │               └── MainActivity.java
+│   │   │       ├── res/
+│   │   │       │   ├── mipmap-xxxhdpi/
+│   │   │       │   │   └── ic_launcher.png
+│   │   │       │   └── xml/
+│   │   │       │       └── rede.xml
+│   │   │       └── AndroidManifest.xml
+│   │   └── build.gradle
+│   ├── build.gradle
+│   ├── gradle.properties
+│   └── settings.gradle
 ├── artifacts/
 │   ├── api-server/
 │   │   ├── src/
@@ -609,6 +658,36 @@ overrides:
 │       ├── main.js
 │       ├── package.json
 │       └── preload.js
+├── assets/
+│   ├── apple-touch-icon-0bjmg_7d.png
+│   ├── favicon-cmw39ln7.ico
+│   ├── icon-ds_dca0k.svg
+│   ├── index-c8wiwhew.js
+│   ├── index-dpcc-epc.js
+│   ├── index-duhakd9o.css
+│   ├── manifest-sazxpdoz.json
+│   └── pdf-b75moh95.js
+├── electron/
+│   ├── main.cjs
+│   └── preload.cjs
+├── icons/
+│   ├── apple-touch-icon.png
+│   ├── icon-128.png
+│   ├── icon-144.png
+│   ├── icon-152.png
+│   ├── icon-16.png
+│   ├── icon-180.png
+│   ├── icon-192.png
+│   ├── icon-32.png
+│   ├── icon-384.png
+│   ├── icon-48.png
+│   ├── icon-512.png
+│   ├── icon-72.png
+│   ├── icon-96.png
+│   ├── icon.svg
+│   ├── maskable-192.png
+│   ├── maskable-512.png
+│   └── maskable.svg
 ├── lib/
 │   ├── db/
 │   │   ├── src/
@@ -629,18 +708,37 @@ overrides:
 │   ├── build-eas.sh
 │   ├── export-zip.sh
 │   └── start-servidor.sh
+├── .env
 ├── .env.example
+├── .gitignore
+├── 404.html
+├── apk.config.json
 ├── app.json
+├── Atualização pelo Mini SK · maikonadvogadomg-alt_assistente-juridico-local-09-10-b6@fad7885 · GitHub
+├── auditoria.html
 ├── capacitor.config.ts
+├── codigo-formatacao.txt
+├── comparador.html
 ├── docker-compose.yml
 ├── Dockerfile.api
 ├── eas.json
+├── favicon.ico
+├── favicon.png
+├── hub.html
+├── hub.webmanifest
+├── icon-192.png
+├── icon-512.png
+├── index.html
+├── manifest.json
+├── manifest.webmanifest
 ├── MANUAL.md
 ├── nginx.conf
 ├── package.json
+├── PLANO.md
 ├── pnpm-workspace.yaml
 ├── README.md
 ├── replit.md
+├── service-worker.js
 ├── tsconfig.base.json
 └── tsconfig.json
 ```

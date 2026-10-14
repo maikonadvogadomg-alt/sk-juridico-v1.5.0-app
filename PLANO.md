@@ -1,19 +1,19 @@
 # 📋 Plano do projeto: sk-juridico-v1.5.0
 
-_Gerado em 13/10/2026, 21:00:27 — sem IA, lendo os arquivos._
+_Gerado em 14/10/2026, 02:50:12 — sem IA, lendo os arquivos._
 
 ## 📊 Visão geral
 | Item | Valor |
 |---|---|
-| Arquivos | 215 |
-| Linhas | 46.400 |
+| Arquivos | 216 |
+| Linhas | 46.427 |
 | Telas/páginas | 76 |
 | Rotas do backend | 175 |
 | Chamadas do app | 145 |
 | Tabelas do banco | 20 |
 | Variáveis de ambiente | 28 |
 
-**Linguagens:** TypeScript (React) (90), TypeScript (33), Imagem (22), JSON (18), Outros (12), JavaScript (10), YAML (7), HTML (6), Shell (5), Imagem SVG (4), Markdown (4), CSS (2), Ícone (2)
+**Linguagens:** TypeScript (React) (90), TypeScript (33), Imagem (22), JSON (18), Outros (13), JavaScript (10), YAML (7), HTML (6), Shell (5), Imagem SVG (4), Markdown (4), CSS (2), Ícone (2)
 
 ## 🧩 Apps dentro deste projeto
 - artifacts/api-server (@workspace/api-server)
@@ -911,6 +911,7 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 │  ├─ build-eas.sh
 │  ├─ export-zip.sh
 │  └─ start-servidor.sh
+├─ .env
 ├─ .env.example
 ├─ .gitignore
 ├─ 404.html
