@@ -1,0 +1,40 @@
+{
+  "name": "SK Jurídico IA",
+  "slug": "sk-juridico",
+  "version": "1.5.0",
+  "description": "Assistente jurídico com IA para advogados brasileiros",
+  "orientation": "portrait",
+  "icon": "./artifacts/assistente-juridico/public/icon-512.png",
+  "splash": {
+    "backgroundColor": "#0f172a"
+  },
+  "android": {
+    "package": "br.adv.skjuridico",
+    "versionCode": 15,
+    "adaptiveIcon": {
+      "backgroundColor": "#0f172a"
+    },
+    "permissions": [
+      "android.permission.INTERNET",
+      "android.permission.ACCESS_NETWORK_STATE",
+      "android.permission.CAMERA",
+      "android.permission.READ_EXTERNAL_STORAGE",
+      "android.permission.WRITE_EXTERNAL_STORAGE",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.VIBRATE"
+    ]
+  },
+  "ios": {
+    "bundleIdentifier": "br.adv.skjuridico",
+    "buildNumber": "15",
+    "supportsTablet": true,
+    "infoPlist": {
+      "NSCameraUsageDescription": "Usado para escanear documentos",
+      "NSMicrophoneUsageDescription": "Usado para transcrição de áudio",
+      "NSPhotoLibraryUsageDescription": "Usado para importar documentos"
+    }
+  },
+  "extra": {
+    "capacitorServerUrl": null
+  }
+}
