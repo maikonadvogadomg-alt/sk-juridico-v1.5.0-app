@@ -1,12 +1,12 @@
 # 📋 Plano do projeto: sk-juridico-v1.5.0
 
-_Gerado em 14/10/2026, 03:03:17 — sem IA, lendo os arquivos._
+_Gerado em 14/10/2026, 03:15:16 — sem IA, lendo os arquivos._
 
 ## 📊 Visão geral
 | Item | Valor |
 |---|---|
 | Arquivos | 216 |
-| Linhas | 46.428 |
+| Linhas | 46.436 |
 | Telas/páginas | 76 |
 | Rotas do backend | 175 |
 | Chamadas do app | 145 |
@@ -678,7 +678,7 @@ _Só os nomes. Os valores (chaves, senhas) nunca vão no código nem no GitHub._
 - seeu.mj.gov.br
 
 ## 📦 Peças principais (dependências)
-`@capacitor/android` · `@capacitor/core` · `@google/genai` · `@tiptap/extension-color` · `@tiptap/extension-font-family` · `@tiptap/extension-heading` · `@tiptap/extension-highlight` · `@tiptap/extension-link` · `@tiptap/extension-paragraph` · `@tiptap/extension-table` · `@tiptap/extension-table-cell` · `@tiptap/extension-table-header` · `@tiptap/extension-table-row` · `@tiptap/extension-text-align` · `@tiptap/extension-text-style` · `@tiptap/extension-underline` · `@tiptap/pm` · `@tiptap/react` · `@tiptap/starter-kit` · `@types/connect-pg-simple` · `@types/express-session` · `@types/jsonwebtoken` · `@types/multer` · `@workspace/api-zod` · `@workspace/db` · `adm-zip` · `connect-pg-simple` · `cookie-parser` · `cors` · `docx` · `drizzle-orm` · `drizzle-zod` · `electron-updater` · `express` · `express-rate-limit` · `express-session` · `html-entities` · `jsonwebtoken` · `mammoth` · `memorystore` · `multer` · `openai` · `p-limit` · `p-retry` · `pdfjs-dist` · `pg` · `pino` · `pino-http` · `zod`
+`@capacitor/android` · `@capacitor/core` · `@google/genai` · `@neon/env` · `@neondatabase/api-client` · `@sst-provider/neon` · `@tiptap/extension-color` · `@tiptap/extension-font-family` · `@tiptap/extension-heading` · `@tiptap/extension-highlight` · `@tiptap/extension-link` · `@tiptap/extension-paragraph` · `@tiptap/extension-table` · `@tiptap/extension-table-cell` · `@tiptap/extension-table-header` · `@tiptap/extension-table-row` · `@tiptap/extension-text-align` · `@tiptap/extension-text-style` · `@tiptap/extension-underline` · `@tiptap/pm` · `@tiptap/react` · `@tiptap/starter-kit` · `@types/connect-pg-simple` · `@types/express-session` · `@types/jsonwebtoken` · `@types/multer` · `@workspace/api-zod` · `@workspace/db` · `adm-zip` · `connect-pg-simple` · `cookie-parser` · `cors` · `docx` · `drizzle-orm` · `drizzle-zod` · `electron-updater` · `express` · `express-rate-limit` · `express-session` · `html-entities` · `jsonwebtoken` · `mammoth` · `memorystore` · `multer` · `neon` · `node` · `nodemon` · `openai` · `p-limit` · `p-retry` · `pdfjs-dist` · `pg` · `pino` · `pino-http` · `sqli` · `tsx` · `zod`
 
 ## 🧹 Arquivos com coisa da Replit
 - artifacts/assistente-juridico/src/pages/codigo.tsx

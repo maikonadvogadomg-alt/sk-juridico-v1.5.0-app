@@ -1,13 +1,13 @@
 # Plano do projeto: sk-juridico-v1.5.0
 
-_Gerado pelo Mini SK em 14/10/2026, 02:53:58_
+_Gerado pelo Mini SK em 14/10/2026, 03:14:02_
 
 ## Resumo
 
 - Arquivos: **226** (8.2 MB)
 - Tipo: **monorepo** (vários projetos dentro de um) — 6 package.json
 - Arquivos por tipo: TSX 90, TypeScript 33, PNG 22, JSON 18, JavaScript 11, YAML 7, HTML 6, Markdown 5, Shell 5, Texto 4, SVG 4, GRADLE 3, .env 2, XML 2, GITKEEP 2, CSS 2, ICO 2, Manifest 2, Git 1, Java 1, PROPERTIES 1, JPG 1, API 1, CONF 1
-- Dependências diferentes: **123** (49 obrigatórias, 74 só para montar)
+- Dependências diferentes: **131** (57 obrigatórias, 74 só para montar)
 - Restos da Replit: **7 arquivo(s)**
 
 ## 📦 workspace — `package.json`
@@ -25,12 +25,20 @@ _Gerado pelo Mini SK em 14/10/2026, 02:53:58_
 | `typecheck:libs` | Confere os tipos do TypeScript (não muda nada) | `tsc --build` |
 | `typecheck` | Confere os tipos do TypeScript (não muda nada) | `pnpm run typecheck:libs && pnpm -r --filter "./artifacts/**" --filter "./scripts" --if-present run typecheck` |
 
-**Dependências (o app precisa) — 2:**
+**Dependências (o app precisa) — 10:**
 
 | Pacote | Versão | Pra que serve | Tipo |
 |---|---|---|---|
-| `@capacitor/core` | ^7.0.0 | Transforma o app em APK (Android) | 📱 APK |
 | `@capacitor/android` | ^7.0.0 | Projeto Android do Capacitor | 📱 APK |
+| `@capacitor/core` | ^7.0.0 | Transforma o app em APK (Android) | 📱 APK |
+| `@neon/env` | ^1.6.2 | (sem descrição — toque no nome para ver no npm) | ❔ |
+| `@neondatabase/api-client` | ^2.7.3 | (sem descrição — toque no nome para ver no npm) | ❔ |
+| `@sst-provider/neon` | ^0.13.0 | (sem descrição — toque no nome para ver no npm) | ❔ |
+| `neon` | ^8.4.4 | (sem descrição — toque no nome para ver no npm) | ❔ |
+| `node` | ^26.11.1 | (sem descrição — toque no nome para ver no npm) | ❔ |
+| `nodemon` | ^3.1.14 | Reinicia o servidor quando o código muda | 🔧 Montagem |
+| `sqli` | ^0.0.4 | (sem descrição — toque no nome para ver no npm) | ❔ |
+| `tsx` | ^4.23.15 | Roda arquivos TypeScript direto (servidor em modo teste) | 🔧 Montagem |
 
 **Dependências de montagem (dev) — 7:**
 
